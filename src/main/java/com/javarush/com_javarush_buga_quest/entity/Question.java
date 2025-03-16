@@ -2,6 +2,8 @@ package com.javarush.com_javarush_buga_quest.entity;
 
 import com.javarush.com_javarush_buga_quest.repository.DataBase;
 import lombok.Getter;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,5 +33,32 @@ public class Question {
         this.answerFalse = data.getTextForQuestions(ANSWER_FALSE_ID);
 
         logger.info("New Question class created");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Question question = (Question) o;
+        return new EqualsBuilder().append(QUESTION_TEXT_ID, question.QUESTION_TEXT_ID)
+                .append(questionText, question.questionText)
+                .append(ANSWER_TRUE_ID, question.ANSWER_TRUE_ID)
+                .append(answerTrue, question.answerTrue)
+                .append(ANSWER_FALSE_ID, question.ANSWER_FALSE_ID)
+                .append(answerFalse, question.answerFalse)
+                .isEquals();
+    }
+
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 37)
+                .append(QUESTION_TEXT_ID)
+                .append(questionText)
+                .append(ANSWER_TRUE_ID)
+                .append(answerTrue)
+                .append(ANSWER_FALSE_ID)
+                .append(answerFalse)
+                .toHashCode();
     }
 }
