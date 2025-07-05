@@ -1,6 +1,6 @@
-package com.javarush.com_javarush_buga_quest.entity;
+package com.web.quest.entity;
 
-import com.javarush.com_javarush_buga_quest.repository.DataBase;
+import com.web.quest.repository.DataBase;
 import lombok.Getter;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;

@@ -1,4 +1,4 @@
-<%@ page import="com.javarush.com_javarush_buga_quest.repository.DataBase" %>
+<%@ page import="com.web.quest.repository.DataBase" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>

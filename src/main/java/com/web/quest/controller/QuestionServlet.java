@@ -1,7 +1,7 @@
-package com.javarush.com_javarush_buga_quest.controller;
+package com.web.quest.controller;
 
-import com.javarush.com_javarush_buga_quest.entity.Question;
-import com.javarush.com_javarush_buga_quest.repository.DataBase;
+import com.web.quest.entity.Question;
+import com.web.quest.repository.DataBase;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -30,7 +30,7 @@ public class QuestionServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) {
 
         logger.info(QuestionServlet.class.getSimpleName() + " method doGet started");
 

@@ -1,4 +1,4 @@
-<%@ page import="com.javarush.com_javarush_buga_quest.entity.Question" %>
+<%@ page import="com.web.quest.entity.Question" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>

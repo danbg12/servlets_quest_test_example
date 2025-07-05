@@ -1,4 +1,4 @@
-package com.javarush.com_javarush_buga_quest.repository;
+package com.web.quest.repository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

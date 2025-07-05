@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.javarush</groupId>
-    <artifactId>com_javarush_buga_quest</artifactId>
+    <groupId>com.quest</groupId>
+    <artifactId>quest</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>com.javarush.buga.quest</name>
+    <name>quest</name>
     <packaging>war</packaging>
 
     <properties>
