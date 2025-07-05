@@ -1,6 +1,5 @@
-package com.javarush.com_javarush_buga_quest.repository;
+package com.web.quest.repository;
 
-import com.web.quest.repository.DataBase;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import org.slf4j.Logger;
